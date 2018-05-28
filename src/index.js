@@ -1,9 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import './index.scss'
+import Style from "./index.scss"
+import ChoroplethMap from "./components/ChoroplethMap"
 
-const Index = () => {
-  return <div className="header">Hello React!</div>;
-};
-
-ReactDOM.render(<Index />, document.getElementById("index"));
+ReactDOM.render(<ChoroplethMap />, document.getElementById("index"));
