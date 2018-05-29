@@ -16,7 +16,7 @@ class ChoroplethMap extends React.Component {
     componentDidMount() {
       var vectorSource = new ol.source.Vector({
         format: new ol.format.GeoJSON(),
-        url: 'http://localhost:8080/cmae-services-gis/v1/country',
+        url: 'http://localhost:8080/cmae-services-gis/v1/country/geojson',
       });
 
       var buildingStyle = new ol.style.Style({
