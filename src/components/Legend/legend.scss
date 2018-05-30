@@ -1,0 +1,52 @@
+.cnt-legend {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    padding: 10px;
+    margin: 5px;
+    background: rgba(255, 255, 255, .6);
+    border-radius: 5px;
+    opacity: .6;
+
+    &:hover {
+        opacity: 1;
+        h2 { display: inherit; }
+        .box-legend {
+            .legend {
+                width: 80px;
+                span {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    h2 {
+        font-size: 1em;
+        font-weight: 700;
+        margin: .2em;
+        display: none;
+    }
+
+    .box-legend {
+        display: flex;
+
+        .legend {
+            position: relative;
+            width: 20px;
+            height: 20px;
+            background: #000;
+
+            span {             
+                width: 100%; 
+                font-size: .7em;
+                color: #000;
+                text-align: center;
+                display: none;
+                font-weight: 700;
+                margin-top: 2px;
+            }
+        }
+    }
+}
